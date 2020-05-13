@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="problemes">
+            <h2><span jhiTranslate="signalerApp.problemes.detail.title">Problemes</span> {{ problemes.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="signalerApp.problemes.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{ problemes.libelle }}</span>
+                </dd>
+                <dt><span jhiTranslate="signalerApp.problemes.numeroIp">Numero Ip</span></dt>
+                <dd>
+                    <span>{{ problemes.numeroIp }}</span>
+                </dd>
+                <dt><span jhiTranslate="signalerApp.problemes.user">User</span></dt>
+                <dd>
+                    {{ problemes.user?.id }}
+                </dd>
+                <dt><span jhiTranslate="signalerApp.problemes.agence">Agence</span></dt>
+                <dd>
+                    <div *ngIf="problemes.agence">
+                        <a [routerLink]="['/agence', problemes.agence?.id, 'view']">{{ problemes.agence?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/problemes', problemes.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

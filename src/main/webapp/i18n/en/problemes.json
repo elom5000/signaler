@@ -1,0 +1,25 @@
+{
+  "signalerApp": {
+    "problemes": {
+      "home": {
+        "title": "Problemes",
+        "createLabel": "Create a new Problemes",
+        "createOrEditLabel": "Create or edit a Problemes",
+        "notFound": "No Problemes found"
+      },
+      "created": "A new Problemes is created with identifier {{ param }}",
+      "updated": "A Problemes is updated with identifier {{ param }}",
+      "deleted": "A Problemes is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Problemes {{ id }}?"
+      },
+      "detail": {
+        "title": "Problemes"
+      },
+      "libelle": "Libelle",
+      "numeroIp": "Numero Ip",
+      "user": "User",
+      "agence": "Agence"
+    }
+  }
+}

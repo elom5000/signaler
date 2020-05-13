@@ -1,0 +1,25 @@
+{
+  "signalerApp": {
+    "problemes": {
+      "home": {
+        "title": "Problemes",
+        "createLabel": "Créer un nouveau Problemes",
+        "createOrEditLabel": "Créer ou éditer un Problemes",
+        "notFound": "Aucun Problemes trouvé"
+      },
+      "created": "Un nouveau Problemes a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Problemes avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Problemes avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Problemes {{ id }} ?"
+      },
+      "detail": {
+        "title": "Problemes"
+      },
+      "libelle": "Libelle",
+      "numeroIp": "Numero Ip",
+      "user": "User",
+      "agence": "Agence"
+    }
+  }
+}
