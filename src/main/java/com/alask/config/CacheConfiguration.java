@@ -40,6 +40,8 @@ public class CacheConfiguration {
             createCache(cm, com.alask.domain.User.class.getName());
             createCache(cm, com.alask.domain.Authority.class.getName());
             createCache(cm, com.alask.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.alask.domain.Problemes.class.getName());
+            createCache(cm, com.alask.domain.Agence.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
